@@ -1,6 +1,5 @@
-c:\users\azgard\documents\visual studio 2015\Projects\MonMagasin\MonMagasin\bin\Debug\MonMagasin.exe.config
-c:\users\azgard\documents\visual studio 2015\Projects\MonMagasin\MonMagasin\bin\Debug\MonMagasin.exe
-c:\users\azgard\documents\visual studio 2015\Projects\MonMagasin\MonMagasin\bin\Debug\MonMagasin.pdb
-c:\users\azgard\documents\visual studio 2015\Projects\MonMagasin\MonMagasin\obj\Debug\MonMagasin.csprojResolveAssemblyReference.cache
-c:\users\azgard\documents\visual studio 2015\Projects\MonMagasin\MonMagasin\obj\Debug\MonMagasin.exe
-c:\users\azgard\documents\visual studio 2015\Projects\MonMagasin\MonMagasin\obj\Debug\MonMagasin.pdb
+C:\Users\Azgard\Documents\Visual Studio 2015\Projects\MonMagasin\MonMagasin\bin\Debug\MonMagasin.exe.config
+C:\Users\Azgard\Documents\Visual Studio 2015\Projects\MonMagasin\MonMagasin\bin\Debug\MonMagasin.exe
+C:\Users\Azgard\Documents\Visual Studio 2015\Projects\MonMagasin\MonMagasin\bin\Debug\MonMagasin.pdb
+C:\Users\Azgard\Documents\Visual Studio 2015\Projects\MonMagasin\MonMagasin\obj\Debug\MonMagasin.exe
+C:\Users\Azgard\Documents\Visual Studio 2015\Projects\MonMagasin\MonMagasin\obj\Debug\MonMagasin.pdb

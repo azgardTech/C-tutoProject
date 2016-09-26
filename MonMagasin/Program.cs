@@ -23,11 +23,20 @@ namespace MonMagasin
         static void Main(string[] args)
         {
 
-            Produit p = Produit.MakeProduct();
-            Console.WriteLine("***************");
-            Console.WriteLine(p.ToString());
+            Magasin m = new Magasin(1,"aaaa",20);
+
+            m.h.Add(new Produit(1, "aaa", "aaa", "11-22-2222", 550));
+            m.h.Add(new Produit(2, "aaa", "aaa", "11-22-2222", 550));
+            m.h.Add(new Produit(3, "aaa", "aaa", "11-22-2222", 550));
+         /*   Console.WriteLine("*************************\n\n");
+            m.MagasinShow();
+            Console.WriteLine("\n\n*************************");*/
+            Console.WriteLine(m.SearchProduct(new Produit(3, "aaa", "aaa", "11-22-2222", 550))); 
+           /* Console.WriteLine("***************sss**********\n\n");
+            m.MagasinShow();
+            Console.WriteLine("\n\n*************************");*/
             Console.ReadKey();
- 
+
 
         }
     }

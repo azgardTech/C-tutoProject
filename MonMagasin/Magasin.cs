@@ -51,36 +51,52 @@ namespace MonMagasin
 
         public void AddProduct(Produit p)
         {
-            Boolean ok = false;
-            foreach(Produit prd in this.h.TakeWhile(i=>!ok))
-            { ok = Produit.ToCompare(p, prd); }
-
-            if(!ok)
-            {
-              this.h.Add(p);
-              Console.WriteLine("Add product complete with success...");
-            }
+            if (SearchProduct(p))
+            { Console.WriteLine("Product already exist..."); }
             else
-            { Console.WriteLine("Product already exist"); }
-            
+            { h.Add(p);
+                Console.WriteLine("Product added successfully..."); }
+
+
         }
 
 
         public void DeleteProduct(Produit p)
         {
             Boolean ok = false;
-            foreach(Produit prd in this.h.TakeWhile(i=>!ok))
-            { ok = Produit.ToCompare(p, prd);
-                if(ok)
-                { this.h.Remove(prd); }
+            int i = 1;
+            Produit prd = new Produit();
+
+            while (!ok && i < h.Count)
+            {
+                if (h.ElementAt(i).ToCompare(p))
+                { ok = true;
+                  prd = h.ElementAt(i);
+                }
+                i++;
             }
+            if (h.Remove(prd))
+            { Console.WriteLine("Product was removed successfully..."); }
+            else
+            { Console.WriteLine("Product does not exist..."); }
+
         }
+        
 
         public Boolean SearchProduct(Produit p)
         {
             Boolean ok = false;
-            foreach(Produit prd in this.h.TakeWhile(i=>!ok))
-            { ok = Produit.ToCompare(prd, p); }
+            int i = 0;
+
+            while (!ok && i < this.h.Count)
+            {
+                
+                if (h.ElementAt(i).ToCompare(p))
+                {
+                    ok = true;
+                }
+                i++;
+            }
             return ok;
         }
 
